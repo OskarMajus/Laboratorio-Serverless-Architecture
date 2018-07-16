@@ -43,7 +43,7 @@ namespace TollBooth
             const string requestParameters = "language=unk&detectOrientation=true";
             // Get the API URL and the API key from settings.
             // TODO 2: Populate the below two variables with the correct AppSettings properties.
-            var uriBase = ConfigurationManager.AppSettings["https://westcentralus.api.cognitive.microsoft.com/vision/v1.0"];
+            var uriBase = ConfigurationManager.AppSettings["https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/ocr"];
             var apiKey = ConfigurationManager.AppSettings["5efc67cd334b495a81b2f19b7f7df7bd"];
 
             var resiliencyStrategy = DefineAndRetrieveResiliencyStrategy();
